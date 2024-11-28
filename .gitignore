@@ -14,3 +14,13 @@
 
 # Ignore medias and videos
 *.{part,ytdl,mp4}
+
+# Ignore python virtual environment
+**/[Bb]in
+**/[Ii]nclude
+**/[Ll]ib
+**/[Ll]ib64
+**/[Ll]ocal
+**/[Ss]cripts
+**/[Ss]hare
+**/pyvenv.cfg
