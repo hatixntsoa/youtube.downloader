@@ -15,7 +15,7 @@ if is_standalone:
     from utils.download_path import prompt_download_path
     from utils.env_handler import get_env_variable, set_env_variable
 
-    __version__ = '0.1.2'
+    __version__ = '0.1.3'
     __author__ = 'Hatix Ntsoa'
 else:
     from pytube.classes.downloader import VideoDownloader
