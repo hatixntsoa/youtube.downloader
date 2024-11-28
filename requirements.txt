@@ -1,5 +1,5 @@
-python-dotenv
-setuptools
-yt_dlp
-moviepy
-inquirer
+python-dotenv==1.0.1
+setuptools==68.1.2
+yt_dlp==2024.11.18
+moviepy==2.0.0.dev2
+inquirer==3.4.0

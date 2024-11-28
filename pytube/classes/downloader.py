@@ -1,6 +1,6 @@
 import yt_dlp
 import os
-from moviepy import VideoFileClip, AudioFileClip
+from moviepy.editor import VideoFileClip, AudioFileClip
 import re
 import threading
 import itertools
