@@ -45,7 +45,7 @@ pip install pytube-tool
 
 ### Option 2: Build from Source
 
-For those who prefer to build it themselves:
+For those who prefer to build it themselves, follow these steps:
 
 1. Clone the repository and navigate to the project directory:
 
@@ -54,19 +54,35 @@ For those who prefer to build it themselves:
    cd youtube_downloader
    ```
 
-2. Install required packages:
+2. **Create a Virtual Environment** (to avoid dependency conflicts):
+
+   - On Linux
+
+   ```bash
+   python -m venv pytube_env
+   source pytube_env/bin/activate
+   ```
+
+   - On Windows
+
+   ```bash
+   python -m venv pytube_env
+   source pytube_env\Scripts\activate
+   ```
+
+3. Install required packages:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Build the package:
+4. Build the package:
 
    ```bash
    python setup.py sdist bdist_wheel
    ```
 
-4. Install the package:
+5. Install the package:
 
    ```bash
    pip install dist/*.whl
