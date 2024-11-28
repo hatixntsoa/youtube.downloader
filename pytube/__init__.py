@@ -1,5 +1,5 @@
 __title__ = 'pytube-tool'
-__version__ = '0.1.1'
+__version__ = '0.1.2'
 __author__ = 'Hatix Ntsoa'
 __license__ = 'MIT'
 __copyright__ = 'Copyright (C) 2024 Hatix Ntsoa'
