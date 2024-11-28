@@ -92,7 +92,7 @@ Once the package is installed, you can use the `pytube` command from the termina
 
 1. **Download a Single Video**:
    ```bash
-   pytube --url https://www.youtube.com/watch?v=example_video_id
+   pytube --url https://www.youtube.com/watch?v=dQw4w9WgXcQ
    ```
 
    The tool will list available formats, allowing you to select your preferred option.
