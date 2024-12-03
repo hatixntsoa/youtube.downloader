@@ -14,6 +14,7 @@ if is_standalone:
 
     from utils.download_path import prompt_download_path
     from utils.env_handler import get_env_variable, set_env_variable
+    from utils.argument_parser import add_arguments
 
     __version__ = '0.1.3'
     __author__ = 'Hatix Ntsoa'
@@ -23,6 +24,7 @@ else:
 
     from pytube.utils.download_path import prompt_download_path
     from pytube.utils.env_handler import get_env_variable, set_env_variable
+    from pytube.utils.argument_parser import add_arguments
 
     from pytube import __version__, __author__
 
@@ -88,40 +90,7 @@ def process_url(url, download_path):
 
 
 def main():
-    # Argument parsing
-    parser = argparse.ArgumentParser(description="Download YouTube videos using pytube-tool.")
-    parser.add_argument(
-        "--version", "-v", 
-        action="version", 
-        version=f"%(prog)s {__version__}"
-    )
-    parser.add_argument(
-        "--author", 
-        action="store_true", 
-        help="Show author information"
-    )
-    parser.add_argument(
-        "--url", "-u", 
-        type=str, 
-        help="YouTube video URL to download directly without prompting."
-    )
-    parser.add_argument(
-        "--path", "-p", 
-        type=str, 
-        help="Specify the download path for the videos."
-    )
-    parser.add_argument(
-        "--batch", "-b",
-        type=str,
-        help="Path to a file containing a list of YouTube video URLs."
-    )
-    parser.add_argument(
-        "--upgrade", 
-        action="store_true", 
-        help="Upgrade the pytube package to the latest version"
-    )
-
-    args = parser.parse_args()
+    args: argparse.Namespace = add_arguments(version=__version__)
 
     try:
         # Use the provided path or fallback to the default path logic
