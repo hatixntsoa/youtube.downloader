@@ -50,7 +50,7 @@ For those who prefer to build it themselves, follow these steps:
 1. Clone the repository and navigate to the project directory:
 
    ```bash
-   git clone https://github.com/h471x/youtube_downloader.git
+   git clone https://github.com/hatixntsoa/youtube_downloader.git
    cd youtube_downloader
    ```
 
