@@ -1,7 +1,7 @@
 # Pytube Tool
 
 <p align="center">
- <img height="150" src="https://raw.githubusercontent.com/h471x/youtube_downloader/master/imgs/pytube.png"/>
+ <img height="150" src="https://raw.githubusercontent.com/hatixntsoa/youtube.downloader/master/imgs/pytube.png"/>
 </p>
 
 <div align="center">
@@ -50,8 +50,8 @@ For those who prefer to build it themselves, follow these steps:
 1. Clone the repository and navigate to the project directory:
 
    ```bash
-   git clone https://github.com/hatixntsoa/youtube_downloader.git
-   cd youtube_downloader
+   git clone https://github.com/hatixntsoa/youtube.downloader.git
+   cd youtube.downloader
    ```
 
 2. **Create a Virtual Environment** (to avoid dependency conflicts):
